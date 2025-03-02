@@ -23,7 +23,7 @@ load_dotenv()
 
 # MongoDB connection setup
 def get_database_connection():
-    mongo_uri = os.getenv("MONGO_URI","mongodb+srv://ajaykarthik:1234@cluster0.wqelv.mongodb.net/" )
+    mongo_uri = os.getenv("MONGO_URI","mongodb+srv://ajaykarthik:test@cluster0.wqelv.mongodb.net/" )
     client = pymongo.MongoClient(mongo_uri)
     db = client["task_management_db"]
     return db
